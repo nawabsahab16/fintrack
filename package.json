@@ -60,9 +60,12 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@tanstack/react-query": "^5.40.1",
+    "@tanstack/react-query-devtools": "^5.40.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "devtools": "^8.38.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
     "postcss": "^8",
