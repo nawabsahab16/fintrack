@@ -4,7 +4,7 @@ import * as React from "react"
 
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { Button } from "@/components/ui/button";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 
 
 import {
@@ -28,6 +28,8 @@ import {
 import { Currencies, Currency } from "@/lib/currencies"
 import SkeletonWrapper from "./SkeletonWrapper";
 import { UserSettings } from "@prisma/client";
+import { UpdateUserCurrency } from "@/app/wizard/_actions/userSettings";
+import { toast } from "sonner";
 
 export function CurrencyComboBox() {
   const [open, setOpen] = React.useState(false)
@@ -40,6 +42,39 @@ export function CurrencyComboBox() {
      queryKey: ["userSettings"],
      queryFn: () => fetch("/api/user-settings").then((res) => res.json()),
   });
+   
+  React.useEffect(() => {
+    if(!userSettings.data) return;
+     const userCurrency = Currencies.find(
+      (currency) => currency.value === userSettings.data.currency
+     );
+     if(userCurrency) setSelectedOption(userCurrency);
+  }, [userSettings.data]);
+   
+  
+  const mutation = useMutation({
+    mutationFn: UpdateUserCurrency,
+  });
+
+  const selectOption = React.useCallback(
+    (currency: Currency | null) => {
+
+      if(!currency) {
+       toast.error("Please select a currency");
+       return;
+      }
+
+      toast.loading("Updating currency...", {
+        id : "update-currency",
+      });
+
+      mutation.mutate(currency.value);
+    },
+
+    [mutation]
+  );
+
+
 
 
   if (isDesktop) {
