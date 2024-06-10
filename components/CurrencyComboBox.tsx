@@ -2,8 +2,11 @@
 
 import * as React from "react"
 
-import { useMediaQuery } from "@/hooks/use-media-query"
-import { Button } from "@/components/ui/button"
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { Button } from "@/components/ui/button";
+import { useQuery } from "@tanstack/react-query";
+
+
 import {
   Command,
   CommandEmpty,
@@ -23,6 +26,8 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { Currencies, Currency } from "@/lib/currencies"
+import SkeletonWrapper from "./SkeletonWrapper";
+import { UserSettings } from "@prisma/client";
 
 export function CurrencyComboBox() {
   const [open, setOpen] = React.useState(false)
@@ -30,9 +35,17 @@ export function CurrencyComboBox() {
   const [selectedOption , setSelectedOption] = React.useState<Currency | null>(
     null
   )
+  
+  const userSettings = useQuery<UserSettings>({
+     queryKey: ["userSettings"],
+     queryFn: () => fetch("/api/user-settings").then((res) => res.json()),
+  });
+
 
   if (isDesktop) {
-    return (
+    return ( 
+
+     <SkeletonWrapper isLoading={userSettings.isFetching} >  
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button variant="outline" className="w-full justify-start">
@@ -42,11 +55,13 @@ export function CurrencyComboBox() {
         <PopoverContent className="w-[200px] p-0" align="start">
           <OptionList setOpen={setOpen} setSelectedOption={setSelectedOption} />
         </PopoverContent>
-      </Popover>
+       </Popover>
+      </SkeletonWrapper> 
     )
   }
 
   return (
+    <SkeletonWrapper isLoading={userSettings.isFetching} >  
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <Button variant="outline" className="w-full justify-start">
@@ -59,6 +74,7 @@ export function CurrencyComboBox() {
         </div>
       </DrawerContent>
     </Drawer>
+    </SkeletonWrapper >
   )
 }
 
