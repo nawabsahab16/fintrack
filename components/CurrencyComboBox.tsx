@@ -70,7 +70,6 @@ export function CurrencyComboBox() {
 
       mutation.mutate(currency.value);
     },
-
     [mutation]
   );
 
