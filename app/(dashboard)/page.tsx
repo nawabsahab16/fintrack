@@ -37,7 +37,7 @@ async function page(){
              New Income 🤑
             </Button>
            } 
-           type="income "
+           type="income"
            />
          <CreateTransactionDialog trigger = {
            <Button
