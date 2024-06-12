@@ -1,17 +1,19 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { Popover, PopoverTrigger } from '@/components/ui/popover';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { TransactionType } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import { CreateCategorySchema, CreateCategorySchemaType } from '@/schema/categories';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { PlusSquare } from 'lucide-react';
+import { CircleOff, PlusSquare } from 'lucide-react';
 import React, { useState } from 'react'
-import { useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form'; 
+import data from "@emoji-mart/data";
+import Picker from "@emoji-mart/react";
 
 interface Props {
   type : TransactionType;
@@ -87,12 +89,33 @@ function CreateCategoryDialog({type} : Props) {
                                     className="h-[100px] w-full"
                                    >  
                                    {form.watch("icon") ? (
-                                     <div> Selected icon </div>
+                                       <div className="flex flex-col items-center gap-2"> 
+                                        <span className="text-5xl" role="img">
+                                           {field.value}
+                                        </span>
+                                       <p className="text-xs text-muted-foreground">
+                                          Click to select   
+                                        </p>
+                                     </div>
                                    ) : (
-                                    <div> No selection </div>
+                                    <div className="flex flex-col items-center gap-2"> 
+                                        <CircleOff className="h-[48px] w-[48px] "/>
+                                        <p className="text-xs text-muted-foreground">
+                                           Click to select   
+                                         </p>
+                                      </div>
                                    )}
                                    </Button>
                                  </PopoverTrigger>
+                                    <PopoverContent  className="w-full">
+                                       <Picker 
+                                        data = {data}
+                                        onEmojiSelect ={(emoji: { native : string}) => {
+                                        field.onChange(emoji.native);
+                                   }}
+                                       />
+                                    </PopoverContent>
+
                                </Popover>
                              </FormControl> 
                              <FormDescription>
@@ -101,10 +124,24 @@ function CreateCategoryDialog({type} : Props) {
                         </FormItem>
                     )} 
                   />
-
-
                </form>
             </Form>
+            <DialogFooter>
+                <DialogClose>
+                   <Button
+                    type="button"
+                    variant={"secondary"}
+                    onClick={() => {
+                     form.reset();
+                    }}
+                   >
+                   Cancel 
+                   </Button>
+                </DialogClose> 
+                 <Button>
+                    Save 
+                 </Button>
+            </DialogFooter>
        </DialogContent>
   </Dialog>
   
