@@ -116,10 +116,10 @@ function CreateCategoryDialog({type, successCallback} : Props) {
                         <FormItem>
                             <FormLabel> Name </FormLabel>
                              <FormControl>
-                                <Input defaultValue={""} {...field} />
+                                <Input defaultValue={"Category"} {...field} />
                              </FormControl> 
                              <FormDescription>
-                                Transaction description (optional)
+                               This is how your category will appear in the app
                              </FormDescription>
                         </FormItem>
                     )} 
@@ -160,6 +160,7 @@ function CreateCategoryDialog({type, successCallback} : Props) {
                                     <PopoverContent  className="w-full">
                                        <Picker 
                                         data = {data}
+                                        theme = {theme.resolvedTheme}
                                         onEmojiSelect ={(emoji: { native : string}) => {
                                         field.onChange(emoji.native);
                                    }}
