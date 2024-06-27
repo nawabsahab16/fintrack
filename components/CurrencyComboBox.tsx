@@ -51,7 +51,6 @@ export function CurrencyComboBox() {
      );
      if(userCurrency) setSelectedOption(userCurrency);
   }, [userSettings.data]);
-   
   
   const mutation = useMutation({
     mutationFn: UpdateUserCurrency, 
@@ -89,8 +88,6 @@ export function CurrencyComboBox() {
     },
     [mutation]
   );
-
-
 
 
   if (isDesktop) {
