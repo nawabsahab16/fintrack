@@ -250,5 +250,5 @@ function TooltipRow({
         </div>
       </div>
     </div>
-  );
+  ); 
 }
