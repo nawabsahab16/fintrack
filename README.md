@@ -1,4 +1,5 @@
-The Problem:
+<h2> The Problem: </h2>
+
 Managing personal finances can be challenging for many individuals, from college students managing limited budgets to working professionals handling various expenses. Keeping track of transactions, categorizing spending, and understanding financial habits require time and effort. Many existing solutions are either too complex or lack the necessary features to make financial management straightforward and effective.
 
 The Solution:
