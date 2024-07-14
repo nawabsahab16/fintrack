@@ -25,12 +25,25 @@ Prisma: Powerful ORM for database interactions
 React-query: Data fetching and state management
 Recharts: High-quality data visualizations
 
+![Screenshot 2024-06-28 225600](https://github.com/user-attachments/assets/560c50dc-67e3-4d73-bc5c-2a1e92434953)
+
+
 <h2> 📗 Features: </h2>
 Transaction Management: Easily add, edit, and delete transactions.
+
+![Screenshot 2024-06-28 225632](https://github.com/user-attachments/assets/84692670-c2d0-4ebc-9911-f7beec5bf693)
+
 Category Statistics: Track spending across various categories.
 Historical Data Aggregates: View and analyze financial trends over time.
+
+![Screenshot 2024-06-28 225653](https://github.com/user-attachments/assets/7670f2f7-1950-4a8c-b453-e432c06eef6d)
+
+
 Stunning Charts: Visualize financial data with beautiful and interactive charts.
 Icon Selector for Categories: Personalize categories with icons for better visualization.
+
+![Screenshot 2024-06-28 225743](https://github.com/user-attachments/assets/85446bcf-91b9-4a40-85a3-42b6cc4c0be3)
+
 
 <h2> 🎯 Benefits: </h2> 
 FinTrack provides an easy-to-use platform that helps users take control of their finances without the complexity often associated with financial management tools. By offering clear insights and powerful features, FinTrack empowers users to make informed financial decisions and improve their financial well-being.
