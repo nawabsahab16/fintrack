@@ -19,35 +19,37 @@ With FinTrack, users can effortlessly manage their finances, categorize their sp
 
 
 <h2> 🛠️ Stack: </h2>
-<strong>Next.js 14: </strong> API routes and ServerActions!
-<strong> Auth with Clerk: </strong> Secure user authentication
-<strong> TypeScript:</strong> Type-safe programming
-<strong> TailwindCSS / Shadcn UI: </strong> Responsive and customizable UI
-<strong> SQLite / Vercel PostgreSQL: </strong> Reliable and scalable database solutions
-<strong> Prisma:</strong> Powerful ORM for database interactions
-<strong> React-query:  </strong> Data fetching and state management
-<strong> Recharts: </strong> High-quality data visualizations
+<strong>Next.js 14: </strong> API routes and ServerActions! <br>
+<strong> Auth with Clerk: </strong> Secure user authentication <br> 
+<strong> TypeScript:</strong> Type-safe programming <br> 
+<strong> TailwindCSS / Shadcn UI: </strong> Responsive and customizable UI <br>
+<strong> SQLite / Vercel PostgreSQL: </strong> Reliable and scalable database solutions <br> 
+<strong> Prisma:</strong> Powerful ORM for database interactions <br>
+<strong> React-query:  </strong> Data fetching and state management <br> 
+<strong> Recharts: </strong> High-quality data visualizations <br> 
+
+<br> 
 
 ![Screenshot 2024-06-28 225600](https://github.com/user-attachments/assets/560c50dc-67e3-4d73-bc5c-2a1e92434953)
 
 
 <h2> 📗 Features: </h2>
 Transaction Management: Easily add, edit, and delete transactions.
-<br>
+
 ![Screenshot 2024-06-28 225632](https://github.com/user-attachments/assets/84692670-c2d0-4ebc-9911-f7beec5bf693)
-<br>
+
 Category Statistics: Track spending across various categories.
 <br>
 ![Screenshot 2024-06-28 225743](https://github.com/user-attachments/assets/fba261e0-ca1a-47f9-9b5d-0ee361f894aa)
-<br>
+
 Historical Data Aggregates: View and analyze financial trends over time.
 <br>
 ![Screenshot 2024-06-28 225632](https://github.com/user-attachments/assets/49420174-871d-4c66-8794-d6c72560e45e)
-<br>
+
 Stunning Charts: Visualize financial data with beautiful and interactive charts.
 <br> 
 ![Screenshot 2024-06-28 225653](https://github.com/user-attachments/assets/7670f2f7-1950-4a8c-b453-e432c06eef6d)
-<br> 
+
 Icon Selector for Categories: Personalize categories with icons for better visualization.
 <br>
 
