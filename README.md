@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The Problem:
+Managing personal finances can be challenging for many individuals, from college students managing limited budgets to working professionals handling various expenses. Keeping track of transactions, categorizing spending, and understanding financial habits require time and effort. Many existing solutions are either too complex or lack the necessary features to make financial management straightforward and effective.
 
-## Getting Started
+The Solution:
+Introducing FinTrack, a comprehensive budget tracker application designed to simplify financial management for everyone, from college students to working professionals. FinTrack leverages modern web technologies to provide a seamless, intuitive, and powerful tool for managing finances.
 
-First, run the development server:
+By combining ease of use with powerful features, FinTrack helps users track their transactions, analyze spending patterns, and gain insights into their financial habits through visually appealing charts and historical data aggregates.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Enter our application FinTrack.
+With FinTrack, users can effortlessly manage their finances, categorize their spending, and visualize their financial data through stunning charts. Our application supports secure authentication, a modern user interface, and robust data handling to ensure a smooth user experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Screenshot 2024-06-28 225525](https://github.com/user-attachments/assets/3f6ae21d-96ad-49bd-abb2-c9f1c6f96911)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Screenshot 2024-06-28 225540](https://github.com/user-attachments/assets/7244954f-8939-49d5-86cf-25b994fb1d16)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Stack
+Next.js 14: API routes and ServerActions!
+Auth with Clerk: Secure user authentication
+TypeScript: Type-safe programming
+TailwindCSS / Shadcn UI: Responsive and customizable UI
+SQLite / Vercel PostgreSQL: Reliable and scalable database solutions
+Prisma: Powerful ORM for database interactions
+React-query: Data fetching and state management
+Recharts: High-quality data visualizations
+Features:
+Transaction Management: Easily add, edit, and delete transactions.
+Category Statistics: Track spending across various categories.
+Historical Data Aggregates: View and analyze financial trends over time.
+Stunning Charts: Visualize financial data with beautiful and interactive charts.
+Icon Selector for Categories: Personalize categories with icons for better visualization.
+Benefits:
+FinTrack provides an easy-to-use platform that helps users take control of their finances without the complexity often associated with financial management tools. By offering clear insights and powerful features, FinTrack empowers users to make informed financial decisions and improve their financial well-being.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+By integrating modern technologies and offering a user-friendly interface, FinTrack ensures that managing finances is no longer a daunting task but a straightforward and engaging experience.
