@@ -14,7 +14,7 @@ With FinTrack, users can effortlessly manage their finances, categorize their sp
 ![Screenshot 2024-06-28 225540](https://github.com/user-attachments/assets/7244954f-8939-49d5-86cf-25b994fb1d16)
 
 
-Stack
+🛠️ Stack:
 Next.js 14: API routes and ServerActions!
 Auth with Clerk: Secure user authentication
 TypeScript: Type-safe programming
@@ -23,13 +23,13 @@ SQLite / Vercel PostgreSQL: Reliable and scalable database solutions
 Prisma: Powerful ORM for database interactions
 React-query: Data fetching and state management
 Recharts: High-quality data visualizations
-Features:
+📗 Features:
 Transaction Management: Easily add, edit, and delete transactions.
 Category Statistics: Track spending across various categories.
 Historical Data Aggregates: View and analyze financial trends over time.
 Stunning Charts: Visualize financial data with beautiful and interactive charts.
 Icon Selector for Categories: Personalize categories with icons for better visualization.
-Benefits:
+🎯 Benefits:
 FinTrack provides an easy-to-use platform that helps users take control of their finances without the complexity often associated with financial management tools. By offering clear insights and powerful features, FinTrack empowers users to make informed financial decisions and improve their financial well-being.
 
 By integrating modern technologies and offering a user-friendly interface, FinTrack ensures that managing finances is no longer a daunting task but a straightforward and engaging experience.
