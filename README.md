@@ -11,11 +11,10 @@ By combining ease of use with powerful features, FinTrack helps users track thei
 Enter our application FinTrack.
 With FinTrack, users can effortlessly manage their finances, categorize their spending, and visualize their financial data through stunning charts. Our application supports <strong>secure authentication, a modern user interface, and robust data handling </strong> to ensure a smooth user experience.
 
-<br>
-![Screenshot 2024-06-28 225525](https://github.com/user-attachments/assets/3f6ae21d-96ad-49bd-abb2-c9f1c6f96911)
+![Screenshot 2024-06-28 225540](https://github.com/user-attachments/assets/f9f7bb33-2040-40d9-8273-5adb0dafde25)
 
-<br> 
-![Screenshot 2024-06-28 225540](https://github.com/user-attachments/assets/7244954f-8939-49d5-86cf-25b994fb1d16)
+![Screenshot 2024-06-28 225525](https://github.com/user-attachments/assets/c4310607-6938-489c-a66f-1f9d4d67487b)
+
 
 
 <h2> 🛠️ Stack: </h2>
